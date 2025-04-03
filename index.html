@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form with Multimedia</title>
+</head>
+<body>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>My Roman Numerals List</h2>
+    <ol type="I">
+        <li>Introduction</li>
+        <li>Contact Information</li>
+        <li>Registration Form</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Beautiful Image</h2>
+    <img src="https://images.pexels.com/photos/3237756/pexels-photo-3237756.jpeg" alt="Nature" width="600" height="400">
+
+    <!-- Table of 5 Contacts -->
+    <h2>Contacts</h2>
+    <table style="border:1" >
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>123 Main St</td>
+                <td>(555) 123-4567</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>456 Oak Ave</td>
+                <td>(555) 987-6543</td>
+                <td>janesmith@example.com</td>
+            </tr>
+            <tr>
+                <td>Robert Brown</td>
+                <td>789 Pine Rd</td>
+                <td>(555) 555-5555</td>
+                <td>robertbrown@example.com</td>
+            </tr>
+            <tr>
+                <td>Alice Johnson</td>
+                <td>321 Birch Blvd</td>
+                <td>(555) 234-5678</td>
+                <td>alicejohnson@example.com</td>
+            </tr>
+            <tr>
+                <td>Mary Lee</td>
+                <td>654 Maple Dr</td>
+                <td>(555) 876-5432</td>
+                <td>marylee@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="/submit" method="post">
+
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+
+        <!-- Date of Birth Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <!-- Dropdown (Select) Field -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+        </select>
+        <br><br>
+
+        <!-- Radio Buttons (Gender) -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <!-- Checkbox (Terms Agreement) -->
+        <input type="checkbox" id="terms" name="terms" value="agree" required>
+        <label for="terms">I agree to the terms and conditions</label>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+
+    </form>
+
+    <!-- Multimedia: Audio Element -->
+    <h2>Audio Example</h2>
+    <audio controls>
+        <source src="audio-file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <br><br>
+
+    <!-- Multimedia: Video Element -->
+    <h2>Video Example</h2>
+    <video width="600" controls>
+        <source src="video-file.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+</body>
+</html>
